@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Happy New Year</title>
+    </head>
+    <body>
+        <script>
+            function countDown(start) {
+                console.log(start);
+                
+                let nextNumber = start - 1;
+
+                if (nextNumber > 0) {
+                    countDown(nextNumber);        
+				} else {
+                    console.log("HAPPY NEW YEAR!");        
+				}
+			}
+
+            countDown(10);
+
+        </script>
+    </body>
+</html>
